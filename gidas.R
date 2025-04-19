@@ -54,6 +54,7 @@ ggplot(top_genes, aes(x = reorder(Gene, Count), y = Count, fill = Disease)) +
        y = "Frequency") +
   theme_minimal()
 
+ggsave("top_genes_plot.png", width = 10, height = 6)
 
 
 
